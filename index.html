@@ -1,18 +1,54 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>쉬운 달력 | Connectopia</title>
-    <meta name="google-site-verification" content="QR0mJ-H3kgxtzDogzuAsu_5Y1RGXEfA5xHnsEHDFUMc" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>쉬운 달력 | 하루를 편하게 정리하는 달력</title>
+  <meta name="description" content="시니어도 편하게 사용할 수 있는 일정 관리 앱, 쉬운 달력입니다.">
+  <meta name="google-site-verification" content="QR0mJ-H3kgxtzDogzuAsu_5Y1RGXEfA5xHnsEHDFUMc" />
+  <style>
+    :root { --ink:#172033; --muted:#647089; --blue:#3767e8; --pale:#f4f7ff; --line:#e5eaf4; }
+    * { box-sizing:border-box; }
+    body { margin:0; color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Noto Sans KR",Arial,sans-serif; background:#fff; }
+    .wrap { max-width:1080px; margin:0 auto; padding:0 28px; }
+    header { padding:28px 0; border-bottom:1px solid var(--line); }
+    .brand { display:flex; align-items:center; gap:12px; font-weight:800; font-size:20px; }
+    .brand img { width:42px; height:42px; border-radius:11px; }
+    .hero { display:grid; grid-template-columns:1.05fr .95fr; gap:54px; align-items:center; padding:76px 0 68px; }
+    .eyebrow { color:var(--blue); font-weight:700; letter-spacing:.02em; }
+    h1 { font-size:clamp(38px,5vw,64px); line-height:1.16; margin:14px 0 22px; letter-spacing:-.06em; }
+    .lead { font-size:20px; line-height:1.7; color:var(--muted); margin:0; }
+    .hero-shot { display:block; width:min(310px,80%); margin:0 auto; border-radius:28px; box-shadow:0 20px 55px #2b4d9926; }
+    .section { padding:78px 0; }
+    .section.alt { background:var(--pale); }
+    h2 { font-size:34px; letter-spacing:-.045em; margin:0 0 12px; }
+    .section-intro { color:var(--muted); margin:0 0 34px; font-size:17px; }
+    .features { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
+    .feature { background:#fff; border:1px solid var(--line); border-radius:22px; padding:22px; }
+    .feature img { width:100%; border-radius:17px; box-shadow:0 10px 25px #263b7318; }
+    .feature h3 { font-size:21px; margin:19px 0 8px; }
+    .feature p { color:var(--muted); line-height:1.65; margin:0; }
+    .trust { display:flex; flex-wrap:wrap; gap:12px; margin-top:30px; }
+    .pill { border:1px solid var(--line); border-radius:999px; padding:10px 15px; color:#45536d; background:#fff; }
+    footer { border-top:1px solid var(--line); padding:28px 0 42px; color:var(--muted); font-size:14px; }
+    footer a { color:inherit; }
+    @media (max-width:760px) { .hero { grid-template-columns:1fr; padding:52px 0; gap:38px; } .hero-shot { width:230px; } .features { grid-template-columns:1fr; } .section { padding:58px 0; } }
+  </style>
 </head>
 <body>
-    <main>
-        <h1>쉬운 달력</h1>
-        <p>쉬운 달력은 시니어도 편하게 사용할 수 있는 일정 관리 앱입니다.</p>
-        <p>달력, 반복 일정, 건강 음악 등 일상에 필요한 기능을 쉽고 크게 제공합니다.</p>
-        <p>문의: <a href="mailto:info@connectopia.ai">info@connectopia.ai</a></p>
-        <p><a href="/privacy_policy.html">개인정보처리방침</a></p>
-    </main>
+  <header><div class="wrap"><div class="brand"><img src="assets/app-icon.png" alt="쉬운 달력 아이콘"><span>쉬운 달력</span></div></div></header>
+  <main>
+    <section class="wrap hero">
+      <div><div class="eyebrow">하루를 편하게 정리하는 달력</div><h1>작은 글씨와 복잡한 메뉴 없이<br>오늘을 한눈에</h1><p class="lead">쉬운 달력은 시니어도 편하게 사용할 수 있도록 만든 일정 관리 앱입니다. 일정과 건강 습관을 크고 간단하게 확인할 수 있습니다.</p><div class="trust"><span class="pill">큰 글씨 달력</span><span class="pill">반복 일정</span><span class="pill">건강 음악</span></div></div>
+      <img class="hero-shot" src="assets/calendar.png" alt="쉬운 달력 일정 화면">
+    </section>
+    <section class="section alt"><div class="wrap"><h2>필요한 기능을 한곳에</h2><p class="section-intro">매일 쓰는 기능을 어렵지 않게 구성했습니다.</p><div class="features">
+      <article class="feature"><img src="assets/calendar.png" alt="달력 화면"><h3>한눈에 보는 일정</h3><p>날짜와 일정을 크게 표시해 오늘 할 일을 빠르게 확인합니다.</p></article>
+      <article class="feature"><img src="assets/health.png" alt="건강 관리 화면"><h3>건강 습관 관리</h3><p>걸음 수와 건강 관련 기록을 한 화면에서 살펴볼 수 있습니다.</p></article>
+      <article class="feature"><img src="assets/music.png" alt="건강 음악 화면"><h3>편안한 건강 음악</h3><p>앱 안에서 건강 음악을 듣고, 원할 때 채널 구독도 연결할 수 있습니다.</p></article>
+    </div></div></section>
+    <section class="wrap section"><h2>쉬운 달력 안내</h2><p class="section-intro">앱 이용 문의는 아래 이메일로 연락해 주세요.</p><p><a href="mailto:info@connectopia.ai">info@connectopia.ai</a></p></section>
+  </main>
+  <footer><div class="wrap">© Connectopia · <a href="privacy_policy.html">개인정보처리방침</a></div></footer>
 </body>
 </html>
