@@ -5,7 +5,7 @@
 <style>body{font-family:system-ui,sans-serif;max-width:52rem;margin:2rem auto;padding:0 1rem;font-size:18px;line-height:1.7;overflow-wrap:anywhere}h1{line-height:1.4}h2{font-size:20px;margin-top:2rem}</style>
 </head><body>
 <h1>Privacy Policy</h1>
-<p>Effective date: 18 October 2026</p>
+<p>Effective date: 21 October 2026</p>
 <p>connectopia Co., Ltd. (&quot;we&quot;, &quot;us&quot;), a company based in the Republic of Korea, makes Large Print Calendar (&quot;the app&quot;) for people who want a calendar that is easy to read and easy to use. This policy explains what personal information the app handles when it is set to the New Zealand region, why, and the rights you have under New Zealand privacy law (the Privacy Act 2020 and its Information Privacy Principles, or IPPs).</p>
 <p>We are responsible for the personal information described in this policy.</p>
 <h2>1. At a glance</h2>
@@ -38,6 +38,8 @@
 <li>Remote settings: your country code, language, time zone, and operating-system and app versions, used to deliver the right app settings</li>
 <li>Usage reports (Google Analytics for Firebase): which screens and features were used and how often, with the app instance identifier, basic device and app information, and your device&#x27;s advertising identifier if your device makes it available. They never include your name, your events, your notes, or your step values</li>
 <li>Error reports (Firebase Crashlytics): crashes and non-fatal errors, stack traces, the app&#x27;s state at the time, and device, operating-system and app versions</li>
+<li>Feedback (&quot;Share feedback&quot; screen): the message you write (5 to 2,000 characters); an email address, only if you choose to enter one so that we can reply; and, only if &quot;Include device information&quot; is on, the app version and build number, the device language and country, the device model, and the operating-system version. We do not add your anonymous ID, installation ID or analytics ID to feedback. A copy of each message, with the same details, is also delivered to our company email inbox so we do not miss it. To limit spam, we keep for two hours a one-way hash (not the original value) of your app&#x27;s integrity token, or of your IP address if the token is not available, with a count of messages sent in that hour.</li>
+<li>Unsent feedback: if a message cannot be sent, the app keeps up to 20 unsent messages on your device, not encrypted, and tries again later, until they are sent or you clear the app&#x27;s data.</li>
 </ul>
 <h3>c. Handled by Google when ads are shown</h3>
 <ul>
@@ -57,6 +59,7 @@
 <li>To find and fix errors, keep the service stable, prevent abuse of our servers, and answer your questions. These are related purposes you would reasonably expect.</li>
 <li>To understand which features are used so we can improve the app. These reports are on by default, and you can turn them off at any time in Settings › Help &amp; backup › Send diagnostic info.</li>
 <li>To show ads that keep the app free, measure how ads perform, limit how often you see the same ad, and prevent ad fraud. Ads may be personalised based on your device&#x27;s advertising identifier. You can limit this as described in §9.</li>
+<li>To read and answer the feedback you send, investigate problems you report (using the device information, if you included it), reply if you gave an email address, and improve the app. You choose to send it, and we use it only for this and related purposes. Giving an email address and device information is optional.</li>
 </ul>
 <p>If you do not use an optional feature, or you decline a permission, the related information is not handled. Only that feature is limited.</p>
 <h2>4. How long we keep it</h2>
@@ -74,6 +77,8 @@
 <li>Error reports: up to 90 days, including the copy we keep for analysis, and then deleted automatically</li>
 <li>Ad information: handled by Google under its own retention rules (§5)</li>
 <li>Server logs: records of calls to our servers, which may include the anonymous ID, kept for up to 30 days and then deleted automatically</li>
+<li>Feedback (message, optional email address, optional device information): one year from the day we receive it, then deleted automatically. We delete the copy in our company email inbox on the same schedule. You can ask us to delete it sooner (§10)</li>
+<li>Spam-protection hash for feedback: two hours</li>
 <li>App integrity, remote settings, and server-call information: for as long as each provider needs it to deliver the service, keep it secure, prevent abuse, and meet legal requirements</li>
 </ul>
 <p>We cannot remotely delete information that is stored only on your device,</p>
@@ -86,13 +91,16 @@
 <li>Google Cloud BigQuery: a copy of usage and error reports that we keep for analysis, for the periods in §4</li>
 <li>YouTube (Google): the Relaxing Music screen plays music in the official YouTube player inside the app. When you play music, YouTube may collect information such as your IP address, device and browser information, and viewing activity, and handles it directly under its own terms and privacy policy. YouTube Terms of Service: https://www.youtube.com/t/terms · Google Privacy Policy: https://policies.google.com/privacy</li>
 <li>Cloudflare (pictures and audio for each date): the date details screen downloads that day&#x27;s picture, and where the app offers a spoken reading, its audio file, from our image server, which Cloudflare runs for us. If you have opened date details, the app may also download pictures for yesterday through the next 7 days when you open it, so they show without waiting. If you have used Read aloud, it may also download audio recordings for the same days. The app checks the list of available pictures and audio files about once a day. To deliver the pictures, audio files and that list, Cloudflare handles your IP address and basic connection details such as the time and the request path (the file or list requested). The app sends no other information. Cloudflare&#x27;s privacy policy: https://www.cloudflare.com/privacypolicy/</li>
+<li>Google Workspace (company email): receives a copy of each feedback message, which we delete after one year (§4)</li>
 <li>Your phone&#x27;s calendar (such as Google Calendar) and Android activity recognition: used only when you grant permission, to provide calendar import and export and the step features</li>
 </ul>
 <h2>6. Where information is processed and international transfers</h2>
 <p>Information is sent over encrypted (HTTPS) connections and is processed in these places:</p>
 <ul>
 <li>Consent records (Cloud Firestore) and our analysis copy (BigQuery): Google Cloud data centres in the United States</li>
-<li>Server features (Cloud Functions): Google Cloud data centres in Seoul, Republic of Korea</li>
+<li>Feedback (Cloud Firestore): Google Cloud data centres in the United States</li>
+<li>Server features, including receiving feedback (Cloud Functions): Google Cloud data centres in Seoul, Republic of Korea</li>
+<li>Company email (Google Workspace), which receives a copy of feedback: Google&#x27;s global infrastructure, including the United States</li>
 <li>Other Firebase services: Google&#x27;s global infrastructure, including the United States</li>
 <li>Ads (Google AdMob and Google User Messaging Platform): Google&#x27;s global infrastructure, including the United States</li>
 <li>Date pictures and audio (Cloudflare): stored in Cloudflare R2 in North America and delivered through Cloudflare&#x27;s global network</li>
