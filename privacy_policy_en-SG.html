@@ -5,13 +5,14 @@
 <style>body{font-family:system-ui,sans-serif;max-width:52rem;margin:2rem auto;padding:0 1rem;font-size:18px;line-height:1.8;overflow-wrap:anywhere}h1{line-height:1.5}h2{font-size:20px;margin-top:2rem}table{border-collapse:collapse;width:100%;margin:1rem 0}th,td{border:1px solid #777;padding:.5rem;text-align:left;vertical-align:top}th{background:#f2f2f2}code{overflow-wrap:anywhere}</style>
 </head><body>
 <h1>Privacy Policy</h1>
-<p>Effective date: 2026-10-23</p>
+<p>Effective date: 2026-11-01</p>
 <p>connectopia Co., Ltd. ("we", "us"), a company based in the Republic of Korea, makes Large Print Calendar ("the app") for people who want a calendar that is easy to read and easy to use. This policy explains what personal information the app handles when it is set to the Singapore region, why, and the rights you have under Singapore's Personal Data Protection Act 2012 (the PDPA).</p>
 <p>We are the organisation responsible for the personal data described in this policy. You can contact us about it at any time (§15).</p>
 <h2>1. At a glance</h2>
 <ul>
 <li>Your events, notes, step counts, and most app settings stay on your device. They are not sent to our servers automatically.</li>
-<li>We never ask for or collect your precise location or your contacts.</li>
+<li>We never ask for your contacts or your precise location. If you tap "Find my location" in Weather, the app checks your approximate location once on your device. It is not sent off your device or saved.</li>
+<li>To show the weather, the ID of the city you chose (at first, a default city picked from your device's time zone and country) is sent to our servers.</li>
 <li>Advertising is disabled for Singapore in the current app configuration.</li>
 <li>The app does not use your events, notes, name or step values for advertising.</li>
 <li>Usage and error reports help us improve the app. They are on by default, and you can turn them off at any time in Settings &gt; Help &amp; backup &gt; Send diagnostic info.</li>
@@ -27,9 +28,12 @@
 <li>Calendar import and export: events and calendar names from the calendar on your phone that you select (such as Google Calendar), and the result of each import or export</li>
 <li>App settings: calendar display, region (including which bank holidays you follow) and language, daily reminders, step display, and vibration</li>
 <li>Health and activity: step counts, your step goal, goals you reached, and whether the activity permission is granted</li>
+<li>Weather city: the city you chose for Weather (at first, a default city picked from your device's time zone and country)</li>
+<li>Location (Weather "Find my location"): only if you tap the button and allow location access, the app reads your device's approximate location once. It is used only to pick the nearest city from the list inside the app. We do not save it, and we do not send it anywhere off your device, including to our servers, ad services and error-reporting services.</li>
 <li>Backup files you create yourself</li>
 </ul>
 <p>Your step counts stay on your device. They are not sent to our servers or to any analytics service. Whether a permission was granted, or whether a feature worked, may be recorded without any step values.</p>
+<p>Your weather city setting may be included in backup files you create. Your location is never written to a backup file.</p>
 <h3>b. On our servers and in Firebase</h3>
 <ul>
 <li>Firebase anonymous authentication ID and app installation identifier</li>
@@ -41,8 +45,10 @@
 <li>Error reports (Firebase Crashlytics): crashes and non-fatal errors, stack traces, the app's state at the time, and device, operating-system and app versions</li>
 <li>Feedback ("Share feedback" screen): the message you write (5 to 2,000 characters); an email address, only if you choose to enter one so that we can reply; and, only if "Include device information" is on, the app version and build number, the device language and country, the device model, and the operating-system version. We do not add your anonymous ID, installation ID or analytics ID to feedback. A copy of each message, with the same details, is also delivered to our company email inbox so we do not miss it. To limit spam, we keep for two hours a one-way hash (not the original value) of your app's integrity token, or of your IP address if the token is not available, with a count of messages sent in that hour.</li>
 <li>Unsent feedback: if a message cannot be sent, the app keeps up to 20 unsent messages on your device, not encrypted, and tries again later, until they are sent or you clear the app's data.</li>
+<li>Weather requests: the ID of the weather city and the app language are sent to our Cloud Functions to get the weather. Coordinates are never sent. We do not store the city ID against your anonymous ID.</li>
+<li>Weather by city: one shared weather record and weather note for each city. They contain no information about you.</li>
 </ul>
-<p>The app does not request GPS or precise location permission. Advertising is disabled in the current Singapore configuration. If advertising is introduced, this policy and any required choice flow will be updated before it is enabled.</p>
+<p>The app does not request precise location permission. If you tap "Find my location" in Weather, the app reads your approximate location once on your device (§2.a); it is not sent off your device or saved. Advertising is disabled in the current Singapore configuration. If advertising is introduced, this policy and any required choice flow will be updated before it is enabled.</p>
 <h2>3. Why we handle it and the basis for doing so</h2>
 <ul>
 <li>To provide the calendar, events, reminders, backup, calendar import and export, and step features you ask for. Basis: you ask for these features and agree to the Terms of Service.</li>
@@ -50,6 +56,8 @@
 <li>To find and fix errors, keep the service stable, prevent abuse of our servers, and answer your questions. Basis: our legitimate interests in running a secure and reliable service, which are not outweighed by any adverse effect on you.</li>
 <li>To understand which features are used and how the app performs, so we can improve it. Basis: your consent, which you can withdraw at any time, simply and free of charge, by turning off Settings &gt; Help &amp; backup &gt; Send diagnostic info; reports stop being sent from that moment.</li>
 <li>To read and answer the feedback you send, investigate problems you report (using the device information, if you included it), reply if you gave an email address, and improve the app. Basis: your consent, given when you send feedback. Giving an email address and device information is optional.</li>
+<li>To show the weather, air quality and alerts for the city you chose, and a short weather note. Basis: you ask for this feature and agree to the Terms of Service.</li>
+<li>To find the nearest weather city when you ask. We do this only after you tap "Find my location" and allow location access. Basis: your consent, given when you tap the button and allow location access in your device's own permission prompt. You can withdraw it at any time in your device settings.</li>
 </ul>
 <p>If you do not use an optional feature, or you decline a permission, the related information is not handled. Only that feature is limited.</p>
 <h2>4. How long we keep it</h2>
@@ -57,6 +65,7 @@
 <ul>
 <li>Profile, app settings, events, notes, reminders, and step records: until you delete or change them in the app, clear the app's data, or uninstall the app</li>
 <li>Events you exported to another calendar: until you delete them in that calendar</li>
+<li>Weather city setting: until you change it, clear the app's data, or uninstall the app. The location read for "Find my location" is not saved; it is discarded as soon as the nearest city is chosen. Only the resulting city ID stays on your device, as the weather city setting.</li>
 <li>Backup files you saved or shared: until you delete them where you saved them. They remain after the app is uninstalled.</li>
 </ul>
 <h3>b. On our servers and with our service providers</h3>
@@ -65,6 +74,8 @@
 <li>Firebase anonymous ID: a random identifier that does not contain your name. When you ask us to delete your information, we delete the sign-in account for this ID together with your consent records (§10)</li>
 <li>Usage reports: up to 14 months, including the copy we keep for analysis, and then deleted automatically</li>
 <li>Error reports: up to 90 days, including the copy we keep for analysis, and then deleted automatically</li>
+<li>Shared weather records and weather notes for each city: 30 days from when they are created. They contain no information about you</li>
+<li>Daily counts of weather server calls: one year. They contain no city or personal identifiers</li>
 <li>Server logs: records of calls to our servers, which may include the anonymous ID, kept for up to 30 days and then deleted automatically</li>
 <li>Feedback (message, optional email address, optional device information): one year from the day we receive it, then deleted automatically. We delete the copy in our company email inbox on the same schedule. You can ask us to delete it sooner (§10)</li>
 <li>Spam-protection hash for feedback: it is scheduled to expire about two hours after its time bucket begins; actual deletion may be delayed</li>
@@ -77,6 +88,9 @@
 <li>Google Firebase (Authentication, Cloud Firestore, Cloud Functions, App Check, Remote Config, Google Analytics for Firebase, Crashlytics): anonymous sign-in, consent records, server features, app integrity checks, remote settings, usage reports, and error reports</li>
 <li>Google Cloud BigQuery: an analysis copy of usage and error reports, retained for the periods in §4</li>
 <li>YouTube (Google): if music is offered in the app, playback uses YouTube’s official player. YouTube then receives connection and viewing information under its own terms and privacy policy. YouTube Terms: https://www.youtube.com/t/terms · Google Privacy Policy: https://policies.google.com/privacy</li>
+<li>Weather data providers: our servers get the weather for each city from WeatherAPI.com. Our servers ask for a city, not for you: the request contains the city and our server's address, and none of your information (not your IP address, anonymous ID or location). WeatherAPI.com's privacy policy: https://www.weatherapi.com/privacy.aspx</li>
+<li>OpenRouter (short weather notes): to write the short weather note, our servers send only the city name and weather data, never information about you. Models from Anthropic are used, with other providers as backups, and each request asks providers not to store the data or use it for training.</li>
+<li>Cloudflare R2 (weather files): when the app downloads a saved weather file, Cloudflare handles your IP address and basic connection details such as the time and the request path, which includes the city ID. The app sends no other information.</li>
 <li>Cloudflare R2: if date almanac images are offered, the app downloads the selected image and file list from our image service. Cloudflare receives your IP address, request time, file path and basic connection information to deliver them. The app sends no event, note or step values with these requests. Monthly scenery is bundled in the app and requires no network request. Cloudflare Privacy Policy: https://www.cloudflare.com/privacypolicy/</li>
 <li>Google Workspace (company email): receives a copy of each feedback message, which we delete after one year (§4)</li>
 <li>Your phone's calendar (such as Google Calendar) and Android activity recognition: used only when you grant permission, to provide calendar import and export and the step features</li>
@@ -90,6 +104,7 @@
 <li>Company email (Google Workspace), which receives a copy of feedback: Google's global infrastructure, including the United States</li>
 <li>Other Firebase services: Google's global infrastructure, including the United States</li>
 <li>Date almanac images, if offered (Cloudflare R2): stored in North America and delivered through Cloudflare’s global network</li>
+<li>Weather: our servers in Seoul receive the weather city ID and fetch the weather for that city from WeatherAPI.com. Shared weather records and notes are stored in Cloud Firestore in the United States. Weather providers see city-level weather data only, never your information</li>
 <li>Our team: we operate from the Republic of Korea and may access this information there to support you and run the service</li>
 </ul>
 <p>Recipients: Google LLC, Google Cloud and their subprocessors (Google Privacy Policy: https://policies.google.com/privacy); Cloudflare, Inc. only if date almanac images are offered (§5); and Google or YouTube only if music is offered (§5).</p>
@@ -101,11 +116,12 @@
 <li>Calendar: to import events from and export events to the calendar on your phone (such as Google Calendar)</li>
 <li>Alarms and reminders: to show reminders at the exact time you chose</li>
 <li>Network: to reach our server features</li>
+<li>Location (approximate, only while you use the app): to find the nearest city for the weather. We ask only when you tap "Find my location".</li>
 <li>Full-screen reminders: to show an important reminder over the lock screen, only if you allow it</li>
 <li>Ongoing step counting: a notification stays visible while the app counts steps in the background</li>
 <li>Run after restart: to restore reminders and step counting after your phone restarts</li>
 </ul>
-<p>We do not ask for every permission when you first open the app. We ask when you turn on or use the feature that needs it. You can withdraw any permission in your device settings; only that feature is limited.</p>
+<p>We do not ask for every permission when you first open the app. We ask when you turn on or use the feature that needs it. You can withdraw any permission in your device settings; only that feature is limited. If you do not allow location, you can still choose a city from the list, and nothing else changes.</p>
 <h2>8. Usage and error reports</h2>
 <p>The app sends usage reports (which features were used) and error reports (crashes and errors) so we can fix problems and improve the app. They never include your name, your events, your notes, or your step values.</p>
 <p>You can turn both off: Settings &gt; Help &amp; backup &gt; Send diagnostic info. Turning it off stops both usage and error reports, and the setting stays off after you restart the app. You can turn it back on at any time, and reports stop being sent from the moment you turn them off. Advertising is disabled for this market.</p>
@@ -125,7 +141,7 @@
 <p>What you can do yourself</p>
 <ul>
 <li>On your device: change or delete your profile, events, and settings in the app, or clear the app's data</li>
-<li>Permissions: withdraw them in your device settings</li>
+<li>Permissions (including location): withdraw them in your device settings</li>
 <li>Advertising: disabled for this market</li>
 <li>Usage and error reports: turn them off or back on in Settings &gt; Help &amp; backup &gt; Send diagnostic info</li>
 </ul>
