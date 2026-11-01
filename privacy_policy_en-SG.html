@@ -11,7 +11,7 @@
 <h2>1. At a glance</h2>
 <ul>
 <li>Your events, notes, step counts, and most app settings stay on your device. They are not sent to our servers automatically.</li>
-<li>We never ask for your contacts or your precise location. If you tap "Find my location" in Weather, the app checks your approximate location once on your device. It is not sent off your device or saved.</li>
+<li>We never ask for your contacts. If you tap "Find my location" in Weather, the app checks your location once on your device: your precise location if you allow precise location, or your approximate location if you allow only approximate. It is not sent off your device or saved.</li>
 <li>To show the weather, the ID of the city you chose (at first, a default city picked from your device's time zone and country) is sent to our servers.</li>
 <li>Advertising is disabled for Singapore in the current app configuration.</li>
 <li>The app does not use your events, notes, name or step values for advertising.</li>
@@ -29,7 +29,7 @@
 <li>App settings: calendar display, region (including which bank holidays you follow) and language, daily reminders, step display, and vibration</li>
 <li>Health and activity: step counts, your step goal, goals you reached, and whether the activity permission is granted</li>
 <li>Weather city: the city you chose for Weather (at first, a default city picked from your device's time zone and country)</li>
-<li>Location (Weather "Find my location"): only if you tap the button and allow location access, the app reads your device's approximate location once. It is used only to pick the nearest city from the list inside the app. We do not save it, and we do not send it anywhere off your device, including to our servers, ad services and error-reporting services.</li>
+<li>Location (Weather "Find my location"): only if you tap the button and allow location access, the app reads your device's location once (precise if you allow precise location, approximate if you allow only approximate). It is used only to pick the nearest city from the list inside the app. We do not save it, and we do not send it anywhere off your device, including to our servers, ad services and error-reporting services.</li>
 <li>Backup files you create yourself</li>
 </ul>
 <p>Your step counts stay on your device. They are not sent to our servers or to any analytics service. Whether a permission was granted, or whether a feature worked, may be recorded without any step values.</p>
@@ -48,7 +48,7 @@
 <li>Weather requests: the ID of the weather city and the app language are sent to our Cloud Functions to get the weather. Coordinates are never sent. We do not store the city ID against your anonymous ID.</li>
 <li>Weather by city: one shared weather record and weather note for each city. They contain no information about you.</li>
 </ul>
-<p>The app does not request precise location permission. If you tap "Find my location" in Weather, the app reads your approximate location once on your device (§2.a); it is not sent off your device or saved. Advertising is disabled in the current Singapore configuration. If advertising is introduced, this policy and any required choice flow will be updated before it is enabled.</p>
+<p>If you tap "Find my location" in Weather, the app reads your location once on your device (precise if you allow it, approximate if you allow only approximate; §2.a); it is not sent off your device or saved. Advertising is disabled in the current Singapore configuration. If advertising is introduced, this policy and any required choice flow will be updated before it is enabled.</p>
 <h2>3. Why we handle it and the basis for doing so</h2>
 <ul>
 <li>To provide the calendar, events, reminders, backup, calendar import and export, and step features you ask for. Basis: you ask for these features and agree to the Terms of Service.</li>
@@ -116,7 +116,7 @@
 <li>Calendar: to import events from and export events to the calendar on your phone (such as Google Calendar)</li>
 <li>Alarms and reminders: to show reminders at the exact time you chose</li>
 <li>Network: to reach our server features</li>
-<li>Location (approximate, only while you use the app): to find the nearest city for the weather. We ask only when you tap "Find my location".</li>
+<li>Location (precise or approximate, only while you use the app): to find the nearest city for the weather. We ask only when you tap "Find my location".</li>
 <li>Full-screen reminders: to show an important reminder over the lock screen, only if you allow it</li>
 <li>Ongoing step counting: a notification stays visible while the app counts steps in the background</li>
 <li>Run after restart: to restore reminders and step counting after your phone restarts</li>

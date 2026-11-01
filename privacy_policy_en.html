@@ -39,7 +39,7 @@
 <h2>1. At a glance</h2>
 <ul>
   <li>Your events, notes, step counts, and most app settings stay on your device. They are not sent to our servers automatically.</li>
-  <li>We never ask for your contacts or your precise location. If you tap "Find my location" in Weather, the app checks your approximate location once on your device. It is not sent off your device or saved.</li>
+  <li>We never ask for your contacts. If you tap "Find my location" in Weather, the app checks your location once on your device: your precise location if you allow precise location, or your approximate location if you allow only approximate. It is not sent off your device or saved.</li>
   <li>To show the weather, the ID of the city you chose (at first, a default city picked from your device's time zone and country) is sent to our servers.</li>
   <li><strong>The app is free and may show ads from Google AdMob.</strong> Ads may be personalized. You can opt out (§9).</li>
   <li>We never use your events, notes, name, or step counts to target ads.</li>
@@ -55,7 +55,7 @@
   <li><strong>App settings:</strong> calendar display, region and language, daily reminders, step display, and vibration</li>
   <li><strong>Health and activity:</strong> step counts, your step goal, goals you reached, and whether the activity permission is granted</li>
   <li><strong>Weather city:</strong> the city you chose for Weather (at first, a default city picked from your device's time zone and country)</li>
-  <li><strong>Location (Weather "Find my location"):</strong> only if you tap the button and allow location access, the app reads your device's approximate location once. It is used only to pick the nearest city from the list inside the app. We do not save it, and we do not send it anywhere off your device, including to our servers, ad services and error-reporting services.</li>
+  <li><strong>Location (Weather "Find my location"):</strong> only if you tap the button and allow location access, the app reads your device's location once (precise if you allow precise location, approximate if you allow only approximate). It is used only to pick the nearest city from the list inside the app. We do not save it, and we do not send it anywhere off your device, including to our servers, ad services and error-reporting services.</li>
   <li><strong>Backup files you create yourself</strong></li>
 </ul>
 <p>Your step counts stay on your device. They are not sent to our servers, to any analytics service, or to advertisers. Whether a permission was granted, or whether a feature worked, may be recorded without any step values.</p>
@@ -83,7 +83,7 @@
   <li>Ad privacy choices you made, and whether a privacy message applies in your area</li>
   <li>Diagnostic information about the ad software, such as crashes, performance, and delays</li>
 </ul>
-<p>The app does not request precise location permission. The approximate location above is what Google AdMob and others may infer from your IP address. It is separate from the approximate location your device reads for Weather "Find my location" (§2.a).</p>
+<p>The approximate location above is what Google AdMob and others may infer from your IP address. It is separate from the location your device reads once for Weather "Find my location" (§2.a), which is never sent off your device.</p>
 <h2>3. Why we handle it</h2>
 <ul>
   <li>To provide the calendar, events, reminders, backup, calendar import and export, and step features you ask for</li>
@@ -152,7 +152,7 @@
   <li><strong>Calendar:</strong> to import events from and export events to the calendar on your phone (such as Google Calendar)</li>
   <li><strong>Alarms and reminders:</strong> to show reminders at the exact time you chose</li>
   <li><strong>Network:</strong> to reach our server features and to show ads</li>
-  <li><strong>Location (approximate, only while you use the app):</strong> to find the nearest city for the weather. We ask only when you tap "Find my location".</li>
+  <li><strong>Location (precise or approximate, only while you use the app):</strong> to find the nearest city for the weather. We ask only when you tap "Find my location".</li>
   <li><strong>Full-screen reminders:</strong> to show an important reminder over the lock screen, only if you allow it</li>
   <li><strong>Ongoing step counting:</strong> a notification stays visible while the app counts steps in the background</li>
   <li><strong>Run after restart:</strong> to restore reminders and step counting after your phone restarts</li>
